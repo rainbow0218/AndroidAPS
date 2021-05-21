@@ -5,7 +5,7 @@ buildscript {
     ext {
         // kotlin 1.5.0 prevents travis from pass
         // remove @kotlin.ExperimentalStdlibApi everywhere when upgrade
-        kotlin_version = '1.5.0'
+        kotlin_version = '1.4.32'
         coreVersion = '1.5.0'
         rxjava_version = '2.2.21'
         rxandroid_version = '2.1.1'
@@ -47,7 +47,7 @@ buildscript {
         // Update to 4.2.1 is not possible because it forces use build-tools 30.0.2
         // and this is not available in travis so far
         // see https://issuetracker.google.com/issues/162255866
-        classpath 'com.android.tools.build:gradle:4.1.3'
+        classpath 'com.android.tools.build:gradle:4.2.1'
         classpath 'com.google.gms:google-services:4.3.5'
         classpath 'com.google.firebase:firebase-crashlytics-gradle:2.6.1'
 
