@@ -5,6 +5,7 @@ version: 2.1
 # Orbs are reusable packages of CircleCI configuration that you may share across projects, enabling you to create encapsulated, parameterized commands, jobs, and executors that can be used across multiple projects.
 orbs:
   android: circleci/android@1.0.3
+  codecov: codecov/codecov@1.2.0
 
 jobs:
   # Below is the definition of your job to build and test your app, you can rename and customize it as you want.
@@ -27,10 +28,9 @@ jobs:
 #          system-image: system-images;android-25;google_apis;x86
 
       # And finally run the release build
-      - run:
-          name: Assemble release build
-          command: |
-             bash <(curl -s https://codecov.io/bash)
+#      - run:
+#          name: Assemble release build
+#          command: |
 #            ./gradlew assembleRelease    
 
 workflows:
