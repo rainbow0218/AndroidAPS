@@ -33,7 +33,7 @@ jobs:
 #          command: |
 #            ./gradlew assembleRelease    
       - codecov/upload:
-          file: ./*/build/jacoco/jacoco.xml
+          file: './*/build/jacoco/jacoco.xml'
 
 workflows:
   # Below is the definition of your workflow.
